@@ -1,0 +1,82 @@
+.grid-list {
+  color: black;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  @media (min-width: 768px) {
+    display: flex;
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (min-width: 1200px) {
+    justify-content: center;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.grid {
+  color: black;
+  width: 250px;
+  //   height: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 10px 5px rgba(255, 0, 0, 0.2);
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 30px;
+
+    margin-bottom: 30px;
+    height: 450px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  @media (min-width: 1200px) {
+    width: 350px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    height: 500px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.grid-title {
+  color: black;
+  font-size: 1.2em;
+  @media (min-width: 1200px) {
+    padding: 10px;
+    font-size: 2em;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+.grid-img {
+  width: 230px;
+  padding: 20px;
+  @media (min-width: 1200px) {
+    padding: 25px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+.grid-text {
+  color: #858585;
+  @media (min-width: 1200px) {
+    padding: 10px;
+  }
+}
